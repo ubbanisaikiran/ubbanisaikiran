@@ -1,9 +1,10 @@
 import { View, Text } from 'react-native'
 import React from 'react'
+import styles from './styles'
 
 export default function Usage() {
   return (
-    <View>
+    <View style={styles.container}>
       <Text>Usage</Text>
     </View>
   )
