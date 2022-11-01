@@ -14,14 +14,18 @@ export default function App() {
     <NavigationContainer>
       <Tab.Navigator 
       screenOptions={{
+        tabBarInactiveBackgroundColor:'#348781',
         tabBarActiveTintColor: '#e91e63',
-        tabBarIcon: ({ color, size }) => (
-          <MaterialCommunityIcons name="bell" color={color} size={size} />
-        ),
+        tabBarInactiveTintColor: '#FFFFFF',
       }}
        >
         <Tab.Screen name='Home' component={Homescreen} 
-        
+        options={{
+          headerStyle:{backgroundColor:"#5CC3A0"},
+          tabBarIcon: ({ color, size }) => (
+            <MaterialCommunityIcons name="bell" color={color} size={size} />
+          ),
+        }}
         />
         <Tab.Screen name='Profile' component={Profile} />
         <Tab.Screen name='Usage' component={Usage} 
